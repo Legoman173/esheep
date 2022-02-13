@@ -1,0 +1,36 @@
+
+<animations xmlns="https://esheep.petrucci.ch/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://esheep.petrucci.ch/ https://raw.githubusercontent.com/Adrianotiger/desktopPet/master/Resources/animations.xsd"><header><author>Tade</author><title>Cham</title><version>0.2</version><info>Cham Bam 1</info><application>1</application><icon>icon</icon><petname>Cham Bam</petname></header><image><tilesx>5</tilesx><tilesy>7</tilesy><png>0</png><transparency>royal blue</transparency></image>
+
+<spawns>
+
+<spawn probability="100" id="1"><x>screenW-1</x><y>areaH-imageH</y><next>2</next></spawn></spawns>
+
+<animations>
+
+<animation id="1"><name>drag</name><start><x>0</x><y>0</y><interval>50</interval><offsety>0</offsety><opacity>1.0</opacity></start><end><x>0</x><y>0</y><interval>50</interval><offsety>0</offsety><opacity>1.0</opacity></end><sequence repeat="0" repeatfrom="0"><frame>0</frame><frame>1</frame><next probability="100" only="none">2</next></sequence></animation>
+
+<animation id="2"><name>walk</name><start><x>-4</x><y>0</y><interval>100</interval><offsety>3</offsety><opacity>1.0</opacity></start><end><x>-4</x><y>0</y><interval>100</interval><offsety>3</offsety><opacity>1.0</opacity></end><sequence repeat="35" repeatfrom="0"><frame>52</frame><frame>53</frame><frame>62</frame><frame>63</frame><frame>64</frame><next probability="98" only="none">2</next></sequence><border><next probability="100" only="none">3</next></border><gravity><next probability="100" only="taskbar">2</next></gravity></animation>
+
+<animation id="3"><name>rotate1</name><start><x>0</x><y>0</y><interval>100</interval><offsety>2</offsety><opacity>1.0</opacity></start><end><x>0</x><y>0</y><interval>100</interval><offsety>2</offsety><opacity>1.0</opacity></end><sequence repeat="0" repeatfrom="0"><frame>16</frame><frame>17</frame><frame>18</frame><frame>19</frame><action>flip</action><next probability="100" only="none">4</next></sequence></animation>
+
+<animation id="4"><name>rotate2</name><start><x>0</x><y>0</y><interval>100</interval><offsety>2</offsety><opacity>1.0</opacity></start><end><x>0</x><y>0</y><interval>100</interval><offsety>2</offsety><opacity>1.0</opacity></end><sequence repeat="0" repeatfrom="0"><frame>19</frame><frame>18</frame><frame>17</frame><frame>16</frame><next probability="100" only="none">2</next></sequence></animation>
+
+<animation id="5"><name>fall</name><start><x>0</x><y>8</y><interval>20</interval><offsety>0</offsety><opacity>1.0</opacity></start><end><x>0</x><y>8</y><interval>20</interval><offsety>0</offsety><opacity>1.0</opacity></end><sequence repeat="100" repeatfrom="0"><frame>28</frame><frame>27</frame><frame>26</frame><next probability="100" only="none">5</next></sequence><border><next probability="100" only="none">6</next></border></animation>
+
+<animation id="6"><name>boing</name><start><x>0</x><y>0</y><interval>50</interval><offsety>3</offsety><opacity>1.0</opacity></start><end><x>0</x><y>0</y><interval>50</interval><offsety>3</offsety><opacity>1.0</opacity></end><sequence repeat="0" repeatfrom="0"><frame>23</frame><frame>24</frame><frame>25</frame><frame>26</frame><frame>27</frame><frame>28</frame><frame>29</frame><next probability="100" only="none">2</next></sequence></animation>
+
+<animation id="7"><name>shoot1</name><start><x>0</x><y>0</y><interval>50</interval><offsety>0</offsety><opacity>1.0</opacity></start><end><x>0</x><y>0</y><interval>50</interval><offsety>0</offsety><opacity>1.0</opacity></end><sequence repeat="10" repeatfrom="1"><frame>32</frame><frame>33</frame><frame>34</frame><frame>35</frame><frame>36</frame><next probability="100" only="none">8</next></sequence></animation>
+
+<animation id="8"><name>shoot2</name><start><x>0</x><y>0</y><interval>100</interval><offsety>0</offsety><opacity>1.0</opacity></start><end><x>0</x><y>0</y><interval>1000</interval><offsety>0</offsety><opacity>1.0</opacity></end><sequence repeat="0" repeatfrom="0"><frame>37</frame><frame>38</frame><next probability="100" only="none">2</next></sequence></animation>
+
+<animation id="9"><name>bullet1</name><start><x>-2</x><y>0</y><interval>20</interval><offsety>0</offsety><opacity>1.0</opacity></start><end><x>-10</x><y>0</y><interval>20</interval><offsety>0</offsety><opacity>1.0</opacity></end><sequence repeat="10" repeatfrom="0"><frame>40</frame><frame>40</frame><frame>40</frame><next probability="100" only="none">10</next></sequence></animation>
+
+<animation id="10"><name>bullet2</name><start><x>-10</x><y>0</y><interval>20</interval><offsety>0</offsety><opacity>1.0</opacity></start><end><x>-10</x><y>0</y><interval>20</interval><offsety>0</offsety><opacity>1.0</opacity></end><sequence repeat="0" repeatfrom="0"><frame>41</frame><frame>41</frame><frame>41</frame><next probability="100" only="none">10</next></sequence></animation>
+
+<animation id="11"><name>running</name><start><x>-5</x><y>0</y><interval>20</interval><offsety>3</offsety><opacity>1.0</opacity></start><end><x>-5</x><y>0</y><interval>20</interval><offsety>3</offsety><opacity>1.0</opacity></end><sequence repeat="5" repeatfrom="0"><frame>58</frame><frame>59</frame><frame>60</frame><frame>61</frame><frame>62</frame><frame>63</frame><frame>64</frame><next probability="100" only="none">2</next></sequence><border><next probability="100" only="none">6</next></border><gravity><next probability="100" only="none">5</next></gravity></animation></animations>
+
+<childs>
+
+<child animationid="0"><x/><y/><next>9</next></child>
+
+<child animationid="0"><x/><y/><next>6</next></child></childs></animations>
